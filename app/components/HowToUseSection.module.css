@@ -1,0 +1,41 @@
+/* HowToUseCard.module.css */
+
+.sectionBg {
+  background-color: #F0E6D2; /* Bone Sand */
+}
+
+.titleColor {
+  color: #3F5C45; /* Olive Canopy */
+}
+
+.hrColor {
+  border-top: 2px solid #3F5C45; /* Olive Canopy */
+}
+
+.cardBg {
+  background-color: #ffffff;
+}
+
+.stepOne {
+  background-color: #F4B942; /* Sunset Gold */
+  color: #3F5C45; /* Olive Canopy */
+}
+
+.stepTwo {
+  background-color: #8C5E3C; /* Savanna Clay */
+  color: #F0E6D2; /* Bone Sand */
+}
+
+.stepThree {
+  background-color: #A9A7A1; /* Baobab Gray */
+  color: #3F5C45; /* Olive Canopy */
+}
+
+.stepFour {
+  background-color: #3F5C45; /* Olive Canopy */
+  color: #F0E6D2; /* Bone Sand */
+}
+
+.textColor {
+  color: #8C5E3C; /* Savanna Clay */
+}

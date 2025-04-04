@@ -1,32 +1,33 @@
 import { useState } from "react";
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+  // Type openIndex as number or null
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqItems = [
     {
       question: "What is a Catchzone?",
-      answer: 
+      answer:
         "A Catchzone is a location-based social environment where you can connect with people around you in real time. It transforms everyday spaces like coffee shops, coworking spaces, or gyms into social hubs for networking, friendships, and collaborations.",
     },
     {
       question: "How do I find a Catchzone near me?",
-      answer: 
+      answer:
         "Simply open our app or website to view a map of active Catchzones in your area. Select one you’d like to join, head to the venue, and you’ll be able to see who’s around and ready to connect.",
     },
     {
       question: "Is Catchzone free to use?",
-      answer: 
+      answer:
         "Yes! Catchzone is completely free to join and explore. You can find nearby Catchzones, meet new people, and send invitations without any cost.",
     },
     {
       question: "Can I create my own Catchzone at my location or event?",
-      answer: 
+      answer:
         "Absolutely! If you’d like to host your own Catchzone—for example, at your café, office, or conference—just sign up as a host. We’ll help you get set up so visitors can connect in real time.",
     },
     {
       question: "What if I’m shy about meeting new people in real life?",
-      answer: 
+      answer:
         "That’s natural! Catchzone helps break the ice by showing you who’s there and open to chat. You can choose who to connect with, send a symbolic invitation, and gradually ease into real-life conversations.",
     },
     {
@@ -35,9 +36,9 @@ export default function FAQ() {
         "We only gather the minimal information needed to help you connect in real time and respect all privacy regulations. Once you leave a Catchzone, your location isn’t tracked or stored.",
     },
   ];
-  
 
-  const handleToggle = (index) => {
+  // Explicitly type `index` to fix 'implicitly has an any type' error
+  const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
